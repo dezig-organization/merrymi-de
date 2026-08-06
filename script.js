@@ -85,7 +85,7 @@ function patchFooterProductLinks() {
     if (localHref) link.href = withLocalPrefix(localHref);
     if (key.toLowerCase() === 'über uns' || key.toLowerCase() === 'o nas') link.href = withLocalPrefix('about-us.html');
     if (key.toLowerCase() === 'faq' || key.toLowerCase() === 'najczęściej zadawane pytania') link.href = withLocalPrefix('index.html#faq');
-    if (key.toLowerCase() === 'blog' || key.toLowerCase() === 'aktualności') link.href = withLocalPrefix('index.html#aktualnosci');
+    if (key.toLowerCase() === 'blog' || key.toLowerCase() === 'aktualności') link.href = withLocalPrefix('index.html#blog');
   });
 }
 
@@ -212,7 +212,7 @@ document.querySelectorAll('.desktop-nav a, .mobile-nav a').forEach((link) => {
     link.href = withLocalPrefix('index.html');
   }
   if (label === 'AKTUALNOŚCI' || label === 'BLOG' || label === 'NEWS' || label === 'NEUIGKEITEN') {
-    link.href = withLocalPrefix('index.html#aktualnosci');
+    link.href = withLocalPrefix('index.html#blog');
   }
   if (label === 'O NAS' || label === 'ÜBER UNS') {
     link.href = withLocalPrefix('about-us.html');
